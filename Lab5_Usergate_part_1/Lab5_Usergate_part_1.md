@@ -72,10 +72,10 @@
 
 | Название                                   | Действие  | Зона ист.                 | Адрес ист. | Зона назн.                | Адрес назн. |
 | ------------------------------------------ | --------- | ------------------------- | ---------- | ------------------------- | ----------- |
-| Allow trusted to<br>untrusted              | Разрешить | Trusted                   | Любой      | Untruste<br>d             | Любой       |
-| VPN for S2S to<br>Trusted and<br>Untrusted | Разрешить | VPN<br>for<br>S2S         | Любой      | Untruste<br>d,Truste<br>d | Любой       |
-| Trusted and<br>Untrusted to<br>VPN for S2S | Разрешить | Untrust<br>ed,Trus<br>ted | Любой      | VPN for<br>S2S            | Любой       |
-| VPN for RA to<br>Trusted and<br>Untrusted  | Разрешить | VPN<br>for<br>RA          | Любой      | Untruste<br>d,Truste<br>d | Любой       |
+| Allow trusted tountrusted              | Разрешить | Trusted                   | Любой      | Untrusted             | Любой       |
+| VPN for S2S to Trusted and Untrusted | Разрешить | VPN<br>for<br>S2S         | Любой      | Untrusted,Truste<br>d | Любой       |
+| Trusted and Untrusted to VPN for S2S | Разрешить | Untrust<br>ed,Trus<br>ted | Любой      | VPN forS2S            | Любой       |
+| VPN for RA to<br>Trusted and Untrusted  | Разрешить | VPN<br>for<br>RA          | Любой      | Untrusted,Trusted | Любой       |
 | Default Block                              | Запретить | Любая                     | Любой      | Любая                     | Любой       |
 
 #### Настройки VPN
