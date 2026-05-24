@@ -44,13 +44,13 @@ Namespace router выполняет функции L3 маршрутизатор
 ## Результат настройки
 #### Конфигурация namespace-ов
 ![](./Pic2_Lab1_OVS_namespaces.png)
-**Настройки ns1**
+##### Настройки ns1
 ![](./Pic3_Lab1_OVS_namespaces.png)
-**Настройки ns2**
+##### Настройки ns2
 ![](./Pic4_Lab1_OVS_namespaces.png)
-**Настройки router**
+##### Настройки router
 ![](./Pic5_Lab1_OVS_namespaces.png)
-**Настройки OVS**
+##### Настройки OVS
 ![](./Pic6_Lab1_OVS_namespaces.png)
-**Тестирование связанности и маршрута**
+##### Тестирование связанности и маршрута
 ![](./Pic7_Lab1_OVS_namespaces.png)
