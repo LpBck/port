@@ -1,5 +1,5 @@
 ## Схема сети
-![[Pic1_Lab5_Usergate_part_1.png]]
+![](./Pic1_Lab5_Usergate_part_1.png)
 ## Цель
 В рамках работы был развернут стенд в VMware Workstation на базе UserGate NGFW.  
 Стенд включает головной офис (NGFW-A), филиал (NGFW-B), DMZ сегмент и удалённого пользователя.  
@@ -40,21 +40,26 @@
 
 #### Настройки VPN
 **Серверные правила**
-![[Pic2_Lab5_Usergate_part_1.png]]
+
+![](./Pic2_Lab5_Usergate_part_1.png)
+
 **Cети VPN**
-![[Pic3_Lab5_Usergate_part_1.png]]
+
+![](./Pic3_Lab5_Usergate_part_1.png)
 
 **Профили VPN**
 **RA VPN Profile:**
-![[Pic4_Lab5_Usergate_part_1.png]]
-![[Pic5_Lab5_Usergate_part_1.png]]
-![[Pic6_Lab5_Usergate_part_1.png]]
+
+![](./Pic4_Lab5_Usergate_part_1.png)
+![](./Pic5_Lab5_Usergate_part_1.png)
+![](./Pic6_Lab5_Usergate_part_1.png)
 
 **S2S VPN Profile:**
 
-![[Pic7_Lab5_Usergate_part_1.png]]
-![[Pic8_Lab5_Usergate_part_1.png]]
-![[Pic9_Lab5_Usergate_part_1.png]]
+![](./Pic7_Lab5_Usergate_part_1.png)
+![](./Pic8_Lab5_Usergate_part_1.png)
+![](./Pic9_Lab5_Usergate_part_1.png)
+
 ## Конфигурация NGFW-B
 
 #### Интерфейсы
@@ -72,20 +77,24 @@
 
 | Название                                   | Действие  | Зона ист.                 | Адрес ист. | Зона назн.                | Адрес назн. |
 | ------------------------------------------ | --------- | ------------------------- | ---------- | ------------------------- | ----------- |
-| Allow trusted tountrusted              | Разрешить | Trusted                   | Любой      | Untrusted             | Любой       |
-| VPN for S2S to Trusted and Untrusted | Разрешить | VPN<br>for<br>S2S         | Любой      | Untrusted,Truste<br>d | Любой       |
-| Trusted and Untrusted to VPN for S2S | Разрешить | Untrust<br>ed,Trus<br>ted | Любой      | VPN forS2S            | Любой       |
-| VPN for RA to<br>Trusted and Untrusted  | Разрешить | VPN<br>for<br>RA          | Любой      | Untrusted,Trusted | Любой       |
+| Allow trusted to<br>untrusted              | Разрешить | Trusted                   | Любой      | Untruste<br>d             | Любой       |
+| VPN for S2S to<br>Trusted and<br>Untrusted | Разрешить | VPN<br>for<br>S2S         | Любой      | Untruste<br>d,Truste<br>d | Любой       |
+| Trusted and<br>Untrusted to<br>VPN for S2S | Разрешить | Untrust<br>ed,Trus<br>ted | Любой      | VPN for<br>S2S            | Любой       |
+| VPN for RA to<br>Trusted and<br>Untrusted  | Разрешить | VPN<br>for<br>RA          | Любой      | Untruste<br>d,Truste<br>d | Любой       |
 | Default Block                              | Запретить | Любая                     | Любой      | Любая                     | Любой       |
 
 #### Настройки VPN
 Проверка установленного Site-to-Site VPN туннеля
-![[Pic10_Lab5_Usergate_part_1.png]]
+
+![](./Pic10_Lab5_Usergate_part_1.png)
+
 **Профили VPN**
 **S2S VPN Profile:**
-![[Pic11_Lab5_Usergate_part_1.png]]
-![[Pic12_Lab5_Usergate_part_1.png]]
-![[Pic13_Lab5_Usergate_part_1.png]]
+
+![](./Pic11_Lab5_Usergate_part_1.png)
+![](./Pic12_Lab5_Usergate_part_1.png)
+![](./Pic13_Lab5_Usergate_part_1.png)
+
 ## Вывод
 В ходе работы был развернут учебный стенд на базе UserGate NGFW.
 Были настроены сетевые интерфейсы, зоны безопасности, правила межсетевого экрана, а также VPN Site-to-Site и Remote Access VPN.
