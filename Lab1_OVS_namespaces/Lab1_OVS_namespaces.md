@@ -1,5 +1,5 @@
 ## Схема сети
-![[Pic1_Lab1_OVS_namespaces.png]]
+![](./Pic1_Lab1_OVS_namespaces.png)
 ## Цель
 Построить простую виртуальную L2/L3 сеть в Linux с использованием namespaces, veth и OVS.
 ## Описание
@@ -43,14 +43,14 @@ Namespace router выполняет функции L3 маршрутизатор
 Для всех узлов были назначены IP-адреса и маршруты по умолчанию. Маршрутизация между подсетями осуществляется через router namespace.
 ## Результат настройки
 #### Конфигурация namespace-ов
-![[Pic2_Lab1_OVS_namespaces.png]]
+![](./Pic2_Lab1_OVS_namespaces.png)
 **Настройки ns1**
-![[Pic3_Lab1_OVS_namespaces.png]]
+![](./Pic3_Lab1_OVS_namespaces.png)
 **Настройки ns2**
-![[Pic4_Lab1_OVS_namespaces.png]]
+![](./Pic4_Lab1_OVS_namespaces.png)
 **Настройки router**
-![[Pic5_Lab1_OVS_namespaces.png]]
+![](./Pic5_Lab1_OVS_namespaces.png)
 **Настройки OVS**
-![[Pic6_Lab1_OVS_namespaces.png]]
+![](./Pic6_Lab1_OVS_namespaces.png)
 **Тестирование связанности и маршрута**
-![[Pic7_Lab1_OVS_namespaces.png]]
+![](./Pic7_Lab1_OVS_namespaces.png)
