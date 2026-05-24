@@ -215,10 +215,15 @@ $ORIGIN 0.10.10.in-addr.arpa.
 
 ## Проверка работы
 **Staff:**
+
 ![](./Pic2_Lab4_DNS.png)
+
 **Guest:**
+
 ![](./Pic3_Lab4_DNS.png)
+
 **Untrusted**
+
 ![](./Pic4_Lab4_DNS.png)
 
 ## Вывод
