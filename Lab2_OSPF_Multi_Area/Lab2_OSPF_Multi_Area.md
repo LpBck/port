@@ -1,6 +1,6 @@
 ## Схема сети
 
-![[Pic1_Lab2_OSPF_Multi_Area.png]]
+![](./Pic1_Lab2_OSPF_Multi_Area.png)
 ## Цель
 Продемонстрировать настройку OSPF маршрутизации с разделением на несколько областей.
 ## Описание
@@ -19,40 +19,39 @@
 #### 2. Распределение сетей по областям
 Сети были добавлены в соответствующие им области согласно схеме, на данном этапе появилась связанность между PC-1 и PC-2.
 Результат ping-а на PC-1 до PC-2:
-![[Pic2_Lab2_OSPF_Multi_Area.png]]
+![](./Pic2_Lab2_OSPF_Multi_Area.png)
 #### 3. Минимальная оптимизация
 Для исключение лишних Hello пакетов в пользовательских участках сети все интерфейсы, подключенные к PC-1 и PC-2 были переведены в режим passive-interface
 Все межмаршрутизаторные соединения были переведены в режим point-to-point, что позволило уменьшить количество LSA пакетов и упростило LSDB 
 #### 4. Проверка корректности настроек
 **Состояние OSPF соседств**
-![[Pic3_Lab2_OSPF_Multi_Area.png|697]]
-![[Pic4_Lab2_OSPF_Multi_Area.png]]
-![[Pic5_Lab2_OSPF_Multi_Area.png]]
-![[Pic6_Lab2_OSPF_Multi_Area.png]]
+![](./Pic3_Lab2_OSPF_Multi_Area.png)
+![](./Pic4_Lab2_OSPF_Multi_Area.png)
+![](./Pic5_Lab2_OSPF_Multi_Area.png)
+![](./Pic6_Lab2_OSPF_Multi_Area.png)
 Все в норме
 **Состояние таблицы маршрутизации**
-![[Pic7_Lab2_OSPF_Multi_Area.png]]
-![[Pic8_Lab2_OSPF_Multi_Area.png]]
-![[Pic9_Lab2_OSPF_Multi_Area.png]]
-![[Pic10_Lab2_OSPF_Multi_Area.png]]
+![](./Pic7_Lab2_OSPF_Multi_Area.png)
+![](./Pic8_Lab2_OSPF_Multi_Area.png)
+![](./Pic9_Lab2_OSPF_Multi_Area.png)
+![](./Pic10_Lab2_OSPF_Multi_Area.png)
 **Состояние LSDB**
-![[Pic11_Lab2_OSPF_Multi_Area.png]]
-![[Pic12_Lab2_OSPF_Multi_Area.png]]
-![[Pic13_Lab2_OSPF_Multi_Area.png]]
-![[Pic14_Lab2_OSPF_Multi_Area.png]]
+![](./Pic11_Lab2_OSPF_Multi_Area.png)
+![](./Pic12_Lab2_OSPF_Multi_Area.png)
+![](./Pic13_Lab2_OSPF_Multi_Area.png)
+![](./Pic14_Lab2_OSPF_Multi_Area.png)
 **Проверка связанности**
-![[Pic15_Lab2_OSPF_Multi_Area.png]]
+![](./Pic15_Lab2_OSPF_Multi_Area.png)
 #### 5. Изменение стоимости маршрута
-Прикола ряди, смешно ведь блять, хахахахха, смеялись все дет-домом
 **Маршрут до изменения стоимости линков**
-![[Pic16_Lab2_OSPF_Multi_Area.png]]
+![](./Pic16_Lab2_OSPF_Multi_Area.png)
 По выводу команды можно понять, что пакет идет таким образом:
 PC1 - R1 - R4 - R3 - PC2, смешно же будет, если мы пакетики захуярим по другому маршруту
 **Изменение стоимости**
 Поменяем на обоих концах линка, соединяющего R1 и R4, цену на 250
-![[Pic17_Lab2_OSPF_Multi_Area.png]]
+![](./Pic17_Lab2_OSPF_Multi_Area.png)
 **Маршрут после изменения стоимости линков**
-![[Pic18_Lab2_OSPF_Multi_Area.png]]
+![](./Pic18_Lab2_OSPF_Multi_Area.png)
 Можно заметить, что теперь пакет идет так:
 PC1- R1 - R2 - R3 - PC2
 Что говорит об успешном изменении стоимости маршрута
