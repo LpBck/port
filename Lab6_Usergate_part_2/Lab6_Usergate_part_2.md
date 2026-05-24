@@ -1,5 +1,5 @@
 ## Схема сети
-![[Pic1_Lab6_Usergate_part_2.png]]
+![](./Pic1_Lab6_Usergate_part_2.png)
 ## Цель
  В рамках работы необходимо был развернут защищённый сетевой стенд на базе UserGate NGFW в VMware Workstation.
 
@@ -54,11 +54,11 @@
 - обеспечить доступ к сервису через один публичный адрес;  
 - централизованно контролировать и логировать входящий трафик через NGFW.
 #### Процесс настройки
-![[Pic2_Lab6_Usergate_part_2.png]]
-![[Pic3_Lab6_Usergate_part_2.png]]
-![[Pic4_Lab6_Usergate_part_2.png]]
-![[Pic5_Lab6_Usergate_part_2.png]]
-![[Pic6_Lab6_Usergate_part_2.png]]
+![](./Pic2_Lab6_Usergate_part_2.png)
+![](./Pic3_Lab6_Usergate_part_2.png)
+![](./Pic4_Lab6_Usergate_part_2.png)
+![](./Pic5_Lab6_Usergate_part_2.png)
+![](./Pic6_Lab6_Usergate_part_2.png)
 ## SSL инспектирование
 Для анализа HTTPS трафика из зоны Trusted в Untrusted была настроена функция SSL инспектирования.  
 Для этого:  
@@ -68,37 +68,45 @@
 Дополнительно заблокирована категория "Развлечения".
 #### Процесс настройки
 **Создание сертификата**
-![[Pic7_Lab6_Usergate_part_2.png]]
-![[Pic8_Lab6_Usergate_part_2.png]]
+![](./Pic7_Lab6_Usergate_part_2.png)
+![](./Pic8_Lab6_Usergate_part_2.png)
 **Правило SSL инспектирования**
-![[Pic9_Lab6_Usergate_part_2.png]]
-![[Pic10_Lab6_Usergate_part_2.png]]
-![[Pic11_Lab6_Usergate_part_2.png]]
+![](./Pic9_Lab6_Usergate_part_2.png)
+![](./Pic10_Lab6_Usergate_part_2.png)
+![](./Pic11_Lab6_Usergate_part_2.png)
 ## Система обнаружения вторжений(IDPS)
 Для защиты внутреннего сегмента DMZ была настроена система обнаружения вторжений (IDPS). Создан профиль IDPS, который был применён к правилам межсетевого экрана между Trusted и DMZ. В ходе проверки была выполнена генерация тестового трафика (сигнатура BlackSun), что привело к фиксации событий в журнале безопасности.
 #### Профиль IDPS
-![[Pic12_Lab6_Usergate_part_2.png]]
-![[Pic13_Lab6_Usergate_part_2.png]]
+![](./Pic12_Lab6_Usergate_part_2.png)
+![](./Pic13_Lab6_Usergate_part_2.png)
+
 Внесем изменение в firewall правило, разрешающее хождение трафика из Trusted в DMZ, поставив в качестве профиля СОВ только что созданный
 #### Тестирование
 Для проверки отправим сообщение с машины-клиента с BlackSun на наш DMZ:
-![[Pic14_Lab6_Usergate_part_2.png]]
+
+![](./Pic14_Lab6_Usergate_part_2.png)
+
 После двух запросов в DMZ из Trusted появилось 2 соответствующие записи в журнале СОВ, следовательно все работает.
-![[Pic15_Lab6_Usergate_part_2.png]]
+
+![](./Pic15_Lab6_Usergate_part_2.png)
 ## Web based VPN
 #### Настройка Веб-портала
-![[Pic16_Lab6_Usergate_part_2.png]]
+![](./Pic16_Lab6_Usergate_part_2.png)
+
 **Создадим отдельный профиль аутентификации**
-![[Pic17_Lab6_Usergate_part_2.png]]
-![[Pic18_Lab6_Usergate_part_2.png]]
+
+![](./Pic17_Lab6_Usergate_part_2.png)
+![](./Pic18_Lab6_Usergate_part_2.png)
+
 **Создадим тестового пользователя**
-![[Pic19_Lab6_Usergate_part_2.png]]
+
+![](./Pic19_Lab6_Usergate_part_2.png)
 #### Создадим новую ссылку на Веб-портал
-![[Pic20_Lab6_Usergate_part_2.png]]
-![[Pic21_Lab6_Usergate_part_2.png]]
-![[Pic22_Lab6_Usergate_part_2.png]]
+![](./Pic20_Lab6_Usergate_part_2.png)
+![](./Pic21_Lab6_Usergate_part_2.png)
+![](./Pic22_Lab6_Usergate_part_2.png)
 #### Скрин со входом на веб-портал
-![[Pic23_Lab6_Usergate_part_2.png]]
+![](./Pic23_Lab6_Usergate_part_2.png)
 ## Вывод
 Были реализованы:
 - публикация Web-сервера через DNAT;
