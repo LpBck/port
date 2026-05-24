@@ -37,7 +37,9 @@
 ![](./Pic8_Lab2_OSPF_Multi_Area.png)
 ![](./Pic9_Lab2_OSPF_Multi_Area.png)
 ![](./Pic10_Lab2_OSPF_Multi_Area.png)
+
 **Состояние LSDB**
+
 ![](./Pic11_Lab2_OSPF_Multi_Area.png)
 ![](./Pic12_Lab2_OSPF_Multi_Area.png)
 ![](./Pic13_Lab2_OSPF_Multi_Area.png)
