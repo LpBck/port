@@ -8,7 +8,7 @@
 - [Lab 4 DNS (BIND9)](./Lab4_DNS/Lab4_DNS.md)
 - [Lab 5 UserGate NGFW Part 1](./Lab5_Usergate_part_1/Lab5_Usergate_part_1.md)
 - [Lab 6 UserGate NGFW Part 2](./Lab6_Usergate_part_2/Lab6_Usergate_part_2.md)
-- [Lab 7 SEN OPNsense](./Lab7_SEN_OPNsense/Lab7_SEN_OPNsense.md)
+- 8==D
 
 ## 🛠 Technologies  
   
